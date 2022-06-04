@@ -25,5 +25,8 @@ app.get('/', (req, res)=>{
 app.get('/news', (req, res)=>{
     res.render('news');
 })
+app.get('/search', (req, res)=>{
+    res.render('search');
+})
 
 app.listen(port, ()=> console.log(`Express app listening at http://localhost:${port}`))
